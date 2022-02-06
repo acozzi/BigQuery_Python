@@ -39,7 +39,6 @@ query_string = """
     LIMIT 50 ;
 """
 query_job = client.query(query_string)
-
 for row in query_job.result():
     print("{}: {}".format(row["name"], row["total"]))
     
