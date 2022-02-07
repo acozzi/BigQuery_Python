@@ -28,6 +28,8 @@ it will install:
     python-dateutil-2.8.2 
     rsa-4.8
 ]
+pip install --upgrade google-cloud-bigquery-storage
+
 Download Credentials from
 https://console.cloud.google.com/apis/dashboard
 Credentials - OAuth 2.0 Client Id

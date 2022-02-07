@@ -28,7 +28,7 @@ with open('data.json') as json_file:
     data = json.load(json_file)
 
 credentials = creds 
-project = data['proyect']
+project = data['project']
 client = bigquery.Client(project=project, credentials=credentials)
 query_string = """
     SELECT name, SUM(number) as total
