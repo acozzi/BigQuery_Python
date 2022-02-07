@@ -35,10 +35,11 @@ https://console.cloud.google.com/apis/dashboard
 Credentials - OAuth 2.0 Client Id
 Add json file to your system path. (make sure that gitignore file include *.json files)
 
-# baseQuery.py
-## Connect to database & make a single query from SQL embebed in python
+# Files
+## baseQuery.py
+Connect to database & make a single query from SQL embebed in python
 
 
-# loadFileBQ.py
-## Upload a CSV file to Bigquery storage.
+## loadFileBQ.py
+### Upload a CSV file to Bigquery storage.
 Get the schema from the first field of the CSV file and set all fields as String Nullable.
