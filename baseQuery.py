@@ -23,7 +23,6 @@ if not creds or not creds.valid:
         with open('token.json', 'w') as token:
             token.write(creds.to_json())    
 
-
 with open('data.json') as json_file:
     data = json.load(json_file)
 
@@ -39,6 +38,7 @@ query_string = """
     LIMIT 50 ;
 """
 query_job = client.query(query_string)
+# Row iterator reference https://cloud.google.com/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.RowIterator
+
 for row in query_job.result():
     print("{}: {}".format(row["name"], row["total"]))
-    
