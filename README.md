@@ -29,12 +29,14 @@ it will install:
     rsa-4.8
 ]
 pip install --upgrade google-cloud-bigquery-storage
+pip install google-auth-oauthlib
 
 Download Credentials from
 https://console.cloud.google.com/apis/dashboard
 Credentials - OAuth 2.0 Client Id
 Add json file to your system path. (make sure that gitignore file include *.json files)
 
+Path: export PATH="$HOME/bin:$PATH"
 # Files
 ## baseQuery.py
 Connect to database & make a single query from SQL embebed in python
